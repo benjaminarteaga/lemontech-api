@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "c5605a19-8c85-4df3-b3d9-4460511be966",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10812238"
+	},
+	"item": [
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/php-api/v1/users/get-all.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-api",
+						"v1",
+						"users",
+						"get-all.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/php-api/v1/users/find.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-api",
+						"v1",
+						"users",
+						"find.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"B253\",\r\n    \"last_name\": \"A672\",\r\n    \"email\": \"example@ex2.com\",\r\n    \"password\": \"1234567\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/php-api/v1/users/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-api",
+						"v1",
+						"users",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 9,\r\n    \"first_name\": \"B111\",\r\n    \"last_name\": \"A2222\",\r\n    \"email\": \"example@ex2.com\",\r\n    \"password\": \"1234567\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/php-api/v1/users/update.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-api",
+						"v1",
+						"users",
+						"update.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 7\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/php-api/v1/users/delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php-api",
+						"v1",
+						"users",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
